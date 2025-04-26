@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Carsharing</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu CSS -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestra Plataforma de Carsharing</h1>
+        <nav>
+            <ul>
+                <li><a href="#search">Buscar Viajes</a></li>
+                <li><a href="#reserve">Reservar Vehículo</a></li>
+                <li><a href="#contact">Contactar Conductores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Buscar Viajes Disponibles</h2>
+            <form>
+                <label for="origin">Origen:</label>
+                <input type="text" id="origin" name="origin" required>
+                
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" name="destination" required>
+                
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section id="reserve">
+            <h2>Reservar Vehículo</h2>
+            <form>
+                <label for="vehicle">Selecciona un Vehículo:</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="car1">Coche 1</option>
+                    <option value="car2">Coche 2</option>
+                    <option value="car3">Coche 3</option>
+                </select>
+                
+                <label for="pickup">Lugar de Recogida:</label>
+                <input type="text" id="pickup" name="pickup" required>
+                
+                <label for="dropoff">Lugar de Devolución:</label>
+                <input type="text" id="dropoff" name="dropoff" required>
+                
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contactar Conductores</h2>
+            <form>
+                <label for="driver">Selecciona un Conductor:</label>
+                <select id="driver" name="driver" required>
+                    <option value="driver1">Conductor 1</option>
+                    <option value="driver2">Conductor 2</option>
+                </select>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Carsharing. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
